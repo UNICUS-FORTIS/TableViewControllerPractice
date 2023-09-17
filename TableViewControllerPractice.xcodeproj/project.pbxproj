@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE1159742AB6FC2100FDA535 /* DiffableSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1159732AB6FC2100FDA535 /* DiffableSettingViewController.swift */; };
+		DE1159772AB71BF300FDA535 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = DE1159762AB71BF300FDA535 /* SnapKit */; };
 		DE583C222A72B99000869A26 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE583C212A72B99000869A26 /* SettingTableViewController.swift */; };
 		DEA97CB42A72A21F00BC18EB /* ShoppingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA97CB32A72A21F00BC18EB /* ShoppingTableViewController.swift */; };
 		DEA97CB62A72AA4000BC18EB /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA97CB52A72AA4000BC18EB /* TableViewCell.swift */; };
@@ -19,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE1159732AB6FC2100FDA535 /* DiffableSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffableSettingViewController.swift; sourceTree = "<group>"; };
 		DE583C212A72B99000869A26 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		DEA97CB32A72A21F00BC18EB /* ShoppingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTableViewController.swift; sourceTree = "<group>"; };
 		DEA97CB52A72AA4000BC18EB /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
@@ -37,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE1159772AB71BF300FDA535 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +70,7 @@
 				DEEB49BE2A7251F200E04F32 /* SceneDelegate.swift */,
 				DEEB49C02A7251F200E04F32 /* ViewController.swift */,
 				DE583C212A72B99000869A26 /* SettingTableViewController.swift */,
+				DE1159732AB6FC2100FDA535 /* DiffableSettingViewController.swift */,
 				DEEB49C22A7251F200E04F32 /* Main.storyboard */,
 				DEA97CB32A72A21F00BC18EB /* ShoppingTableViewController.swift */,
 				DEA97CB52A72AA4000BC18EB /* TableViewCell.swift */,
@@ -92,6 +97,9 @@
 			dependencies = (
 			);
 			name = TableViewControllerPractice;
+			packageProductDependencies = (
+				DE1159762AB71BF300FDA535 /* SnapKit */,
+			);
 			productName = TableViewControllerPractice;
 			productReference = DEEB49B92A7251F200E04F32 /* TableViewControllerPractice.app */;
 			productType = "com.apple.product-type.application";
@@ -120,6 +128,9 @@
 				Base,
 			);
 			mainGroup = DEEB49B02A7251F200E04F32;
+			packageReferences = (
+				DE1159752AB71BF300FDA535 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = DEEB49BA2A7251F200E04F32 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -153,6 +164,7 @@
 				DEA97CB42A72A21F00BC18EB /* ShoppingTableViewController.swift in Sources */,
 				DEEB49BD2A7251F200E04F32 /* AppDelegate.swift in Sources */,
 				DEEB49BF2A7251F200E04F32 /* SceneDelegate.swift in Sources */,
+				DE1159742AB6FC2100FDA535 /* DiffableSettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +390,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DE1159752AB71BF300FDA535 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DE1159762AB71BF300FDA535 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE1159752AB71BF300FDA535 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DEEB49B12A7251F200E04F32 /* Project object */;
 }
