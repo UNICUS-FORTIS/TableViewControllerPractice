@@ -57,7 +57,6 @@ class DiffableSettingViewController: UIViewController {
             var content = cell.defaultContentConfiguration()
             content.text = item.title
             cell.contentConfiguration = content
-            cell.accessories = [.outlineDisclosure()]
         }
         
         let cellRegistration = UICollectionView.CellRegistration<UICollectionViewListCell, Items> { cell, indexPath, item in
